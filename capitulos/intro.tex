@@ -3,83 +3,143 @@
 Neste capítulo pretende-se introduzir brevemente o leitor aos temas pertinentes ao trabalho.
 Serão apresentados o tema, seu domínio, objeto e pergunta de pesquisa e 
 implicações na computação.
+
 \section{Considerações Iniciais}\label{sec:consideracoes_iniciais}
 
-A indústria de desenvolvimento de software, frequentemente celebrada como um bastião da inovação, criatividade e flexibilidade, opera sobre um paradoxo fundamental. 
-Por um lado, 
-a concepção e a construção de constructos computacionais são atividades eminentemente intelectuais, que demandam engenhosidade, resolução de problemas complexos e um grau de  
-artesanato digital. 
-Movimentos como o "\textit{Software Craftsmanship}", Artesanato de Software, surgiram como uma resposta à industrialização do desenvolvimento, enfatizando a 
-importância da qualidade, do profissionalismo e do orgulho no trabalho bem-feito, onde o desenvolvedor é visto como um artesão que aprimora suas habilidades e cria produtos de 
-alta qualidade.
+A indústria de desenvolvimento de software, frequentemente celebrada como um bastião da inovação, criatividade e flexibilidade, 
+opera sobre um paradoxo fundamental. Por um lado, a concepção e a construção de constructos computacionais são atividades 
+eminentemente intelectuais, que demandam engenhosidade, resolução de problemas complexos e um grau de artesanato digital. 
+Movimentos como o \textit{"Software Craftsmanship"} surgiram como uma resposta à industrialização do desenvolvimento, enfatizando a 
+importância da qualidade, do profissionalismo e do orgulho no trabalho bem-feito, onde o desenvolvedor é visto como um artesão que 
+aprimora suas habilidades e cria produtos de alta qualidade. Por outro lado, esta atividade criativa é, em sua vasta maioria, 
+exercida no interior de estruturas corporativas que aplicam lógicas de produção industrial, buscando previsibilidade, padronização e 
+maximização da eficiência. Essa abordagem, herdeira da gestão científica de Frederick Taylor, o Taylorismo \cite{Taylor1911}, visa decompor tarefas 
+complexas em partes menores e gerenciáveis, otimizar fluxos de trabalho e, idealmente, tornar o trabalhador individual uma peça 
+substituível em uma linha de montagem.
 
-Por outro lado, esta atividade criativa é, em sua vasta maioria, exercida no interior de estruturas corporativas que aplicam lógicas de produção industrial, buscando 
-previsibilidade, padronização e maximização da eficiência. 
-Essa abordagem, herdeira da gestão científica de Frederick Taylor, o Taylorismo \cite{Taylor1911}, visa decompor tarefas complexas em 
-partes menores e gerenciáveis, otimizar fluxos de trabalho e, idealmente, tornar o trabalhador individual uma peça substituível em uma linha de montagem. 
-No desenvolvimento de 
-software, isso se manifesta na tentativa de transformar a programação em um processo previsível e mensurável, muitas vezes em detrimento da autonomia e da criatividade do 
-engenheiro.
+Um setor em que essa tensão se manifesta de forma aguda e com vastas consequências é a indústria de jogos digitais. Com uma 
+receita global que supera as indústrias de cinema e música combinadas, os jogos se tornaram um campo central da produção cultural e 
+tecnológica contemporânea. No entanto, por trás da fachada de entretenimento e criatividade, as condições de trabalho dos 
+desenvolvedores frequentemente refletem a face mais severa da industrialização. Práticas como o \textit{crunch}, períodos de trabalho 
+excessivo e não remunerado antes do lançamento de um produto, e a crescente precarização, especialmente para testadores de 
+qualidade, os \textit{QA testers}, que são frequentemente contratados e demitidos em ciclos curtos, demonstram que a lógica taylorista 
+de extração máxima de produtividade persiste e se intensifica. 
 
-Este trabalho de conclusão de curso se propõe a investigar a tensão inerente a este paradoxo. 
-A aplicação de modelos industriais a um trabalho de natureza criativa gera uma 
-forma de alienação, conceito analisado por Karl Marx \cite{Marx1844}. 
-O trabalhador de software, muitas vezes, encontra-se alienado do produto final de seu trabalho, executando tarefas 
-fragmentadas sem uma visão do todo, 
-do próprio ato de produção, seguindo processos sobre os quais tem pouco controle, de seus colegas, devido à especialização excessiva, 
-e de 
-sua própria essência criativa, ao ser reduzido a um executor de tarefas pré-definidas.
+Contudo, a contribuição mais significativa e perturbadora da indústria de jogos para este paradoxo é a sua expansão para além do 
+chão de fábrica digital. A mesma lógica de fragmentação e otimização, antes aplicada ao trabalhador, é agora metodicamente voltada 
+contra o próprio consumidor. A experiência do jogador é decomposta em "loops de engajamento" e micro-objetivos, cuidadosamente 
+projetados não para maximizar a diversão de forma intrínseca, mas para otimizar métricas de retenção e monetização. Este processo 
+representa a aplicação sistemática dos princípios do Behaviorismo Radical de B. F. Skinner \cite{DelpratoMidgley1992}, onde o jogador é condicionado através de 
+esquemas de reforço intermitente, recompensas variáveis e imprevisíveis, para manter o engajamento e incentivar gastos recorrentes.
 
-Nenhum campo exemplifica melhor essa tensão e suas consequências do que a Inteligência Artificial. 
-A IA é o auge da narrativa industrial, a promessa de uma automação completa, 
-onde a "inteligência" reside na própria máquina. 
-Contudo, essa é uma fachada que oculta uma vasta e diversificada gama de trabalho humano. 
-Por trás da aparente autonomia dos 
-algoritmos, existe um exército global de "trabalhadores fantasma" (\textit{ghost workers}) \cite{GraySuri2019}, que realizam microtarefas de rotulagem de dados, moderação de conteúdo e correção de erros dos 
-sistemas, muitas vezes em condições precárias e por remuneração mínima. 
-Esse processo representa a taylorização levada ao extremo, o trabalho cognitivo humano é fragmentado em 
-suas unidades mais básicas para "inteligenciar" a máquina, tornando o trabalhador invisível. 
+Essa dinâmica expande o conceito de alienação, analisado por Karl Marx \cite{Marx1844}, para além do trabalhador e o estende ao jogador. O engenheiro 
+de software encontra-se alienado do produto final, do processo criativo e de sua própria e  ssência ao ser reduzido a um executor de 
+tarefas pré-definidas. De forma análoga, o jogador é sutilmente alienado de sua própria agência lúdica. Suas decisões, que ele 
+percebe como livres e autônomas, são na verdade guiadas e moduladas por sistemas opacos. Algoritmos de \textit{matchmaking}, por exemplo, 
+podem ser projetados não para criar partidas justas, mas para otimizar o engajamento, potencialmente manipulando a experiência para 
+incentivar o jogador a continuar jogando ou a realizar uma compra. Sistemas de precificação dinâmica, por sua vez, podem ajustar o 
+custo de itens virtuais em tempo real com base no perfil de comportamento do jogador, extraindo o máximo valor possível. O jogador, 
+imerso no ato de jogar, raramente percebe que sua experiência é um campo de experimentação e extração econômica.
 
-Essa mistificação da IA cumpre uma função ideológica análoga àquela criticada por Álvaro Vieira Pinto \cite{VieiraPinto2005} em sua análise do conceito de "tecno-estrutura" de John K. Galbraith \cite{Galbraith1967}. 
-Assim como a ideia de que 
-o poder se deslocou do capital para os "técnicos" servia para ocultar a dominação inalterada dos proprietários, a narrativa da "IA inteligente" mascara o poder das corporações 
-que detêm os modelos e os dados, e apaga a centralidade do trabalho humano que a constitui. 
-A máquina, que na filosofia de Vieira Pinto é um objeto de mediação da ação humana, 
-é apresentada como um sujeito autônomo, invertendo a relação fundamental entre criador e criação. 
+A Inteligência Artificial emerge como a tecnologia catalisadora que permite a aplicação dessas lógicas em uma escala massiva, 
+personalizada e em tempo real. A IA não é apenas o produto final que, como se argumentará, oculta o trabalho humano em sua concepção; 
+ela é, crucialmente, a ferramenta que implementa e otimiza os mecanismos de manipulação comportamental. Sistemas de IA são usados 
+para potencializar a eficácia de \textit{dark patterns}, padrões de design enganosos que levam o usuário a tomar decisões contra seus 
+próprios interesses \cite{Brignull2023Deceptive}, e para refinar estratégias de monetização predatória, que exploram vieses cognitivos para induzir gastos.
+
+Assim, a crítica ao ocultamento do trabalho na era da IA deve ser aprofundada. O problema não se resume à invisibilidade do 
+"trabalho fantasma", o conhecido \textit{ghost work} \cite{GraySuri2019},a rotulagem de dados e a moderação de conteúdo que treinam os modelos de IA. 
+Nos jogos digitais, testemunha-se uma dupla ocultação. A primeira camada é a do trabalho de produção, o trabalho precarizado dos 
+desenvolvedores e dos trabalhadores de dados que constituem a base material do sistema. A segunda camada, igualmente importante, é a 
+do trabalho de design manipulativo. A intenção humana de modular o comportamento do jogador, codificada nos algoritmos, é 
+sistematicamente ocultada sob a  fachada de uma jogabilidade "personalizada", "dinâmica" ou "imersiva". A IA, na sua mais sofisticada 
+mistificação, oculta tanto sua base material, o trabalho, quanto sua finalidade ideológica, a manipulação, representando o ápice da crítica 
+de Álvaro Vieira Pinto à tecnologia como um objeto que mascara as relações de poder \cite{VieiraPinto2005}.
 
 \section{Domínio}\label{sec:dominio}
 
-Esta pesquisa se situa na interseção entre a Engenharia de Software, a Sociologia do Trabalho e a Teoria Crítica da Tecnologia. 
-O domínio abrange a análise dos processos de 
-desenvolvimento de software sob a ótica das teorias de organização industrial, como o Taylorismo, e suas críticas, com um foco particular na aplicação desses modelos à produção 
-de sistemas de Inteligência Artificial. 
-Utiliza-se como referencial teórico a filosofia da tecnologia de Álvaro Vieira Pinto para desmistificar a autonomia da técnica e 
-reafirmar a centralidade do sujeito humano, bem como estudos sobre o trabalho digital e o "trabalho fantasma" na economia de plataforma. 
+Esta pesquisa se situa na interseção entre a Engenharia de Software, a Sociologia do Trabalho e a Teoria Crítica da Tecnologia. No 
+entanto, a análise aprofundada do objeto "IA em jogos digitais" exige a expansão deste domínio para incorporar campos de conhecimento 
+que são essenciais para decodificar a complexidade do fenômeno. uma melhor compreensão requer a integração de áreas como:
+
+\begin{itemize}
+    \item \textbf{Estudos Críticos de Jogos (\textit{Critical Game Studies}):} Este campo permite analisar o jogo não como um 
+    software neutro ou um mero produto de entretenimento, mas como um artefato cultural e político. Os jogos refletem, reproduzem e, 
+    por vezes, contestam as ideologias e relações de poder da sociedade em que são criados. Uma perspectiva crítica permite 
+    investigar como os jogos podem normalizar lógicas de trabalho precarizado, consumo excessivo e vigilância de dados sob o véu do 
+    lúdico. 
+
+    \item \textbf{Economia Comportamental e Psicologia Behaviorista:} A compreensão dos mecanismos de monetização e engajamento nos 
+    jogos modernos é impossível sem recorrer a estas disciplinas. O design de muitos sistemas, como as \textit{loot boxes}, 
+    caixas de recompensa aleatórias, e as microtransações \cite{GordonPetrovskaya2023}, é fundamentado em princípios de psicologia comportamental para explorar 
+    vieses cognitivos humanos, como a aversão à perda, o viés de custo afundado e a sensibilidade a esquemas de recompensa variável. 
+    A monetização predatória \cite{PetrovskayaZendle2022}, que visa extrair o máximo de receita de uma pequena fração de jogadores, é a aplicação direta desses 
+    princípios. A análise destes sistemas revela uma engenharia deliberada da psicologia do jogador.
+
+    \item \textbf{Ética do Design:} Este campo fornece o arcabouço para avaliar a responsabilidade moral dos engenheiros, designers 
+    e corporações. A implementação de \textit{dark patterns} \cite{Lupianez-Villanueva2022} e mecânicas viciantes não é um acidente técnico, mas o resultado de 
+    decisões de design tomadas sob intensa pressão corporativa por resultados financeiros. A ética do design questiona os limites 
+    entre persuasão e manipulação, e investiga como criar experiências digitais que respeitem a autonomia e o bem-estar do usuário, 
+    em vez de explorá-lo. 
+\end{itemize}
+
+A articulação desses domínios permite uma análise mais precisa da natureza da tecnologia em questão.
 
 \section{Objeto e Pergunta de Pesquisa}\label{sec:obj_pergunta_pesquisa}
 
-O objeto desta pesquisa é o processo de concepção e produção de constructos computacionais, com ênfase nos sistemas de Inteligência Artificial. 
-A investigação se concentra na 
-análise do trabalho humano — tanto o trabalho intelectual e criativo dos engenheiros de software quanto o trabalho fragmentado e muitas vezes invisibilizado dos trabalhadores 
-de dados, que é sistematicamente ocultado pelos modelos de produção industrial e pelas narrativas de automação que dominam a indústria de tecnologia. 
+A partir da expansão do domínio e do aprofundamento da crítica, torna-se necessário refinar o escopo da investigação para garantir 
+precisão e relevância. A generalidade de "constructos computacionais" é substituída por um foco nos mecanismos específicos que 
+exemplificam a tese central.
 
-A partir da tensão exposta, a pergunta que guia esta monografia é: De que maneira os modelos de produção industrial aplicados ao desenvolvimento de software, especialmente na 
-área de Inteligência Artificial, geram uma tensão com a natureza criativa do trabalho e resultam no ocultamento do trabalho humano essencial para a sua realização? 
+O objeto deste trabalho é o processo de concepção e implementação de sistemas de IA em jogos digitais, com foco em mecanismos de 
+monetização predatória, como precificação dinâmica, loot boxes, entre outros \cite{PetrovskayaZendle2022}, modulação de comportamento, como os\textit{dark patterns} \cite{Brignull2023Deceptive}
+e otimização de engajamento, como o \textit{Engagement-Optimized Matchmaking}, que são sustentados por trabalho humano oculto e visam 
+a instrumentalização do jogador para extração de valor.
+
+A partir da tensão exposta, a pergunta que guia esta monografia é: De que maneira a aplicação de lógicas de produção industrial e de 
+economia comportamental, potencializada por sistemas de Inteligência Artificial, transforma a concepção de jogos digitais, resultando 
+tanto no ocultamento do trabalho humano que os sustenta quanto na instrumentalização da subjetividade do jogador para fins de 
+extração de valor?
 
 \section{Implicações na Computação}\label{sec:implicacoes_computacao}
 
-As implicações desta pesquisa para a área de Engenharia de Computação são, primordialmente, de ordem crítica e ética. 
-Ao desvelar o paradoxo no cerne da produção de software, 
-este trabalho desafia a visão puramente técnica e instrumental da engenharia. 
-Ele convida os futuros engenheiros a refletirem sobre as seguintes questões: 
+As implicações desta pesquisa para a área de Engenharia de Computação são, primordialmente, de ordem crítica e ética, movendo a 
+discussão de um plano abstrato para um plano concreto e urgente. O engenheiro de computação que projeta um algoritmo de precificação 
+dinâmica, um sistema de \textit{loot boxes} ou um algoritmo de \textit{matchmaking} não está apenas otimizando um sistema técnico, 
+ele está ativamente arquitetando um ambiente projetado para influenciar o comportamento humano. Suas escolhas de design, muitas vezes 
+guiadas por métricas de negócio como retenção, conversão e receita média por usuário pagante, têm consequências éticas diretas. Ele 
+assume, conscientemente ou não, o papel de um \textit{game economist} ou de um designer de monetização, cujas decisões podem promover 
+bem-estar ou exploração. 
+
+O caso da multa de 1.125.000 euros aplicada pela Autoridade Holandesa para Consumidores e Mercados, a \textit{ACM} à 
+\textit{Epic Games}, desenvolvedora de \textit{Fortnite} \cite{ACM2024EpicGames}, serve como um exemplo paradigmático. A empresa foi penalizada por práticas 
+comerciais desleais direcionadas a crianças, incluindo o uso de frases como "Compre agora" e, crucialmente, temporizadores de contagem 
+regressiva enganosos para criar uma falsa sensação de escassez, um tipo clássico de \textit{dark pattern}. Este caso demonstra que as 
+implicações da engenharia comportamental não são meramente teóricas, elas são legais, financeiras e têm impacto direto sobre 
+populações vulneráveis. A decisão da \textit{ACM} não aponta para um "erro" de software, mas para uma escolha deliberada de design, 
+o resultado lógico de um processo de concepção que priorizou a maximização da receita em detrimento da ética e do bem-estar do jogador. 
+
+Este trabalho desafia a visão puramente técnica e instrumental da engenharia e convida a refletir sobre a necessidade de desenvolver uma 
+"consciência lúdico-crítica". Esta postura vai além da competência técnica e envolve:
 
 \begin{itemize}
-    \item \textbf{A Natureza do Trabalho de Engenharia:} Reconhecer a engenharia de software não apenas como uma disciplina técnica, mas como uma prática criativa e intelectual que é impactada e, 
-por vezes, limitada por modelos de gestão.
-\item \textbf{A Responsabilidade Ética e Social:} Compreender que as escolhas de arquitetura e processo não são neutras. 
-Elas estão inseridas em um sistema de produção que tem consequências 
-diretas sobre as condições de trabalho de uma vasta cadeia de pessoas, desde os engenheiros na empresa até os trabalhadores de dados em plataformas globais. 
-\item \textbf{A Necessidade de uma Prática Crítica:} Incentivar uma postura que questione a finalidade dos sistemas que são construídos e os interesses que eles servem, alinhando-se a uma 
-engenharia que, conforme a perspectiva de Vieira Pinto, deve ser centrada no humano e consciente de seu papel como sujeito transformador, e não como mero executor em uma linha 
-de montagem industrial. 
+    \item \textbf{Alfabetização em Design Ético:} A capacidade de reconhecer, nomear e analisar criticamente \textit{dark patterns}, \cite{LeiserSantos2024}
+    mecânicas de monetização predatória e outras formas de design manipulativo, compreendendo os princípios psicológicos que elas 
+    exploram.
+    
+    \item \textbf{Questionamento da Métrica:} Desafiar a otimização de métricas de negócio como o único ou principal objetivo do design. 
+    Isso implica em perguntar não apenas "este sistema aumenta a conversão?", mas também "este sistema respeita a autonomia do jogador?" e 
+    "quais são seus potenciais danos?".
+    
+    \item \textbf{Visibilidade do Trabalho:} Assumir a responsabilidade ética de dar crédito e visibilidade a todas as formas de 
+    trabalho que contribuem para o sistema, desde os artistas, programadores e testadores, até os trabalhadores de dados \cite{GraySuri2019}, muitas 
+    vezes em condições precárias, que treinam os modelos de IA subjacentes. 
 \end{itemize}
+
+Em última análise, este trabalho se alinha à perspectiva de Álvaro Vieira Pinto \cite{VieiraPinto2005}, que define a tecnologia como uma mediação da ação 
+humana no mundo. Nos jogos digitais potencializados por IA, essa mediação foi transformada em uma ferramenta de engenharia 
+comportamental em massa, operando em uma escala sem precedentes. O desafio para a Engenharia de Computação é decidir se continuará a 
+ser uma executora acrítica dessa lógica, escondendo-se atrás da suposta neutralidade da técnica, ou se assumirá seu papel como 
+sujeito transformador, consciente de seu poder e responsabilidade para projetar sistemas que respeitem a agência e a dignidade tanto 
+daqueles que os criam quanto daqueles que os jogam. 
+
